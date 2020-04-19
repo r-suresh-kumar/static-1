@@ -10,7 +10,7 @@ pipeline {
                “‘
       }
     }
-  }
+  
     stage('Upload to AWS') {
         steps {
             retry(3){
@@ -20,4 +20,5 @@ pipeline {
                 }
             }
     }
+}
 }
